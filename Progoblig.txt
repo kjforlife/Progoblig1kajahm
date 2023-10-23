@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html lang="no">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://www.pyret.org/js/pyret.js"></script>
+		<title>Progoblig1</title>
+	</head>
+	<body>
+		<script>
+			background-norge = rectangle(264, 192, "solid", "fire-brick")
+			hvit-stripe-hor = rectangle(264, 192 / 4, "solid", "white")
+			bla-stripe-hor = rectangle(264, 192 / 8, "solid", "dark blue")
+			hvit-stripe-ver = rectangle(192 / 4, 2 * 264, "solid", "white")
+			bla-stripe-ver = rectangle(192 / 8, 2 * 264, "solid", "dark blue")
+
+			norge =
+  				put-image(bla-stripe-ver, 96,264,
+    				put-image(bla-stripe-hor, 132, (192 / 2),
+				      	put-image(hvit-stripe-ver, 96, 264, 
+				        	put-image(hvit-stripe-hor, 132, (192 / 2), 
+				          		background-norge))))
+  			norge
+  		</script>
+	</body>
+</html>
